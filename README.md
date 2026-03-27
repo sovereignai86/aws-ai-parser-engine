@@ -1,4 +1,4 @@
-# 🛡️ AWS AI Parser Engine: Mobile-Hardened Edition
+# 🛡️ AWS AI Parser Engine: BX Edition
 
 ![Python Version](https://img.shields.io/badge/python-3.13-blue.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.109.0-009688.svg?style=flat&logo=fastapi&logoColor=white)
