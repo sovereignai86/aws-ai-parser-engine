@@ -1,0 +1,12 @@
+INVOICE: #IDP-77-ALPHA
+DATE: March 26, 2026
+VENDOR: Cyberdyne Systems
+BILL TO: X-Inc AI Division
+
+LINE ITEMS:
+1. Neural Processor (Model T-800) | Qty: 2 | Price: $12,500.00
+2. Liquid Metal Alloy (Gallium-based) | Qty: 5 Liters | Price: $2,000.00
+3. Skynet Cloud Subscription | Qty: 1 | Price: $0.00 (Beta Access)
+
+TOTAL DUE: $35,000.00
+NOTES: Do not allow to connect to the open web.

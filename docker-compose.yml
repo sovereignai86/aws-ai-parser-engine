@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  # 🧠 The Brain: API Gateway & RAG
+  orchestrator:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - DYNAMODB_TABLE_NAME=x-inc-ai-parser-idempotency-dev
+      - AWS_REGION=us-east-1
+    volumes:
+      - ~/.aws:/root/.aws:ro
+    command: python services/orchestration/src/router.py
+
+  # ⚙️ The Nervous System: SQS + Local Watcher
+  extraction-worker:
+    build: .
+    environment:
+      - SQS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/312850677728/x-inc-ai-parser-queue-dev
+      - DYNAMODB_TABLE_NAME=x-inc-ai-parser-idempotency-dev
+      - AWS_REGION=us-east-1
+    volumes:
+      - ~/.aws:/root/.aws:ro
+      - ./ingest:/app/ingest
+    command: python services/extraction-worker/src/main.py

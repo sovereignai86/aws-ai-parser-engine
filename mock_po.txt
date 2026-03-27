@@ -1,0 +1,11 @@
+PURCHASE ORDER: PO-99001
+VENDOR: Cyberdyne Systems
+DATE: 2026-03-25
+
+LINE ITEMS:
+1. Neural Processor | Qty: 2 | Unit Price: 450.00 | Total: 900.00
+2. Plasma Core | Qty: 1 | Unit Price: 1200.00 | Total: 1200.00
+
+SUBTOTAL: 2100.00
+TAX: 0.00
+GRAND TOTAL: 2100.00

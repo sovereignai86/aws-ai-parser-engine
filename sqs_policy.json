@@ -1,0 +1,14 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": { "Service": "s3.amazonaws.com" },
+      "Action": "sqs:SendMessage",
+      "Resource": "arn:aws:sqs:us-east-1:312850677728:x-inc-ai-parser-queue-dev",
+      "Condition": {
+        "ArnLike": { "aws:SourceArn": "arn:aws:s3:::x-inc-ai-parser-idp-data-dev" }
+      }
+    }
+  ]
+}

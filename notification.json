@@ -1,0 +1,8 @@
+{
+  "QueueConfigurations": [
+    {
+      "QueueArn": "arn:aws:sqs:us-east-1:312850677728:x-inc-ai-parser-queue-dev",
+      "Events": ["s3:ObjectCreated:*"]
+    }
+  ]
+}

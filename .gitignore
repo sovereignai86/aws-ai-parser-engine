@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Project Specific Data (CRITICAL)
+ingest/*
+processed/*
+!ingest/.gitkeep
+!processed/.gitkeep
+
+# Logs
+*.log
+
+# Termux/OS specific
+.DS_Store
+
+# Terraform / Infrastructure
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+*.tfvars
